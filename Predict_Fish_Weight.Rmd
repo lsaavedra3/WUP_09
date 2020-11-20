@@ -49,6 +49,7 @@ Fishies = select(Fishies, -Species)
 pairs(Fishies)
 
 ```
+In this model it shows that the best ans straightest line would be lenght 1.
 ```{r}
 summary(Fishies)
 ```
@@ -132,6 +133,9 @@ subsets(regsubsets.out,statistic="adjr2",legend="bottomright",main="Adjusted R^2
 # Discussion and Conclusion
 
 Based on the models we used to predict the best prediction model, it seems that the first model is the best model to use when determining the weight of perch.
+
+For the Beam species it appears that the best regression model would include the variable lenght1 along with the variable weigt and width. Using these variables for our summary bream  model 2 and our subset models, it would appear that the best model to usewould be the subset model with an adjusted R square of 0.934.  
+For the Smelt species it appears that the best regression model is that of variable lenght3 along with weight and width.
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
 
 
